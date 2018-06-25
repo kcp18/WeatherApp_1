@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="enterRootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weatherapp_1.EnterCityDocumentController">
+   <children>
+      <Button fx:id="cancelButton" layoutX="504.0" layoutY="14.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="35.0" prefWidth="68.0" text="Cancel" />
+      <TextField fx:id="searchField" layoutX="132.0" layoutY="61.0" onKeyReleased="#typeOnSearchField" prefHeight="27.0" prefWidth="289.0" promptText="Search" />
+      <Label layoutX="132.0" layoutY="22.0" prefHeight="35.0" prefWidth="258.0" text="Enter the name of city">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Line endX="270.0" layoutX="233.0" layoutY="106.0" startX="-100.0" />
+      <ListView fx:id="listView" layoutX="133.0" layoutY="123.0" prefHeight="200.0" prefWidth="371.0" />
+      <Button fx:id="selectButton" layoutX="421.0" layoutY="331.0" mnemonicParsing="false" onAction="#selectButtonClicked" prefHeight="46.0" prefWidth="84.0" text="Select" visible="false" />
+      <Text fx:id="noResultText" layoutX="140.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Results" visible="false" />
+      <Text fx:id="searchingText" layoutX="140.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Searching..." visible="false" />
+   </children>
+</AnchorPane>

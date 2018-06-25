@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weatherapp_1.DetailWeatherDocumentController">
+   <top>
+      <VBox fx:id="topVBox" prefHeight="152.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="86.0" prefWidth="615.0">
+               <children>
+                  <Text fx:id="cityNameText" strokeType="OUTSIDE" strokeWidth="0.0" text="CityName" textAlignment="CENTER">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="currentDayText" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;Day&gt;" wrappingWidth="200.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="weatherStateText" strokeType="OUTSIDE" strokeWidth="0.0" text="weatherState" wrappingWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="450.0">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="50.0" maxWidth="195.0" minWidth="100.0" prefHeight="50.0" prefWidth="195.0">
+                     <children>
+                        <ImageView fx:id="weatherImageView" fitHeight="51.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" />
+                        <Text fx:id="tempText" strokeType="OUTSIDE" strokeWidth="0.0" text="temp" textAlignment="CENTER" wrappingWidth="99.0">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets right="10.0" top="30.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <center>
+      <VBox fx:id="centerVBox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="395.0" startX="-200.0">
+               <VBox.margin>
+                  <Insets left="25.0" top="5.0" />
+               </VBox.margin>
+            </Line>
+            <ListView fx:id="hourlyListView" prefHeight="143.0" prefWidth="450.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="5.0" />
+               </VBox.margin>
+            </ListView>
+            <Line endX="395.0" startX="-200.0">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Line>
+            <ListView fx:id="dailyListView" prefHeight="250.0" prefWidth="240.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="5.0" />
+               </VBox.margin>
+            </ListView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

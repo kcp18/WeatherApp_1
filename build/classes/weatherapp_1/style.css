@@ -1,0 +1,13 @@
+.root{
+    -fx-background-color: #383838;
+}                        
+
+.list-cell:empty {
+    -fx-opacity: 0;
+}
+
+.list-cell {
+   -fx-padding: 20 0 0 0;
+   -fx-font-size: 25.0;
+ }
+ 

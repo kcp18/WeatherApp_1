@@ -1,0 +1,17 @@
+
+.list-cell:empty {
+    -fx-opacity: 0;
+}
+
+.list-cell {
+   -fx-padding: 20 0 0 0;
+   -fx-font-size: 25.0;
+ }
+ 
+ .list-view .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+}
+
+ .list-view .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
