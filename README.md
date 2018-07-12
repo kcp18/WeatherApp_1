@@ -14,7 +14,7 @@ The use of API from www.wunderground.com in JSON format
 
 Need to have Java SE Runtime Environment in order to run this program
 
-Please download and go to dist directory to run the application
+Please download the repository and go to dist directory to run the application
 
 If you are in dist directory, <br>
 please run "WeatherApp_Final.jar" by
