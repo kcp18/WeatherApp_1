@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weatherapp_1.FXMLDocumentController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addCity" prefHeight="65.0" prefWidth="60.0">
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="editButton" mnemonicParsing="false" onAction="#editButtonClicked" prefHeight="41.0" prefWidth="40.0" visible="false">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/info-2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ImageView fitHeight="102.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/weatherAppIcon.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ToggleButton fx:id="toggleButtonC" mnemonicParsing="false" onMouseClicked="#changeToCelcious" prefHeight="67.0" prefWidth="94.0" text="°C">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="toggleButtonF" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#changeToFahrenheit" prefHeight="67.0" prefWidth="94.0" text="°F">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="15.0" top="15.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <ListView fx:id="mainListView" onMouseClicked="#itemDoubleClicked" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
