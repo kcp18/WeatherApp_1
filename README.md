@@ -8,7 +8,7 @@ You can search the weathers of cities in the world through wunderground.com API.
 
 Java and JavaFX in Netbeans Platform
 
-The use of API from www.wunderground.com 
+The use of API from www.wunderground.com in JSON format
 
 ## Requirement: 
 
