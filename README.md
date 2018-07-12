@@ -1,11 +1,27 @@
-# Weather App Built by JavaFx + NetBeans 
+# Weather App Built by Java and JavaFX
 
-## API FROM www.wunderground.com, which is also used by Iphone and Apple products
+## What it does: 
+
+You can search the weathers of cities in the world through wunderground.com API.
+
+## Technique:
+
+Java and JavaFX in Netbeans Platform
+
+The use of API from www.wunderground.com 
+
+## Requirement: 
+
+Need to have Java SE Runtime Environment in order to run this program
 
 Please download and go to dist directory to run the application
 
 If you are in dist directory, please run "WeatherApp_Final.jar"
 
-![](/images/mainpage.png)
-![](/images/searchquery.png)
-![](/images/detailpage.png)
+# Screenshots
+
+
+<img src="images/mainpage.png" width="440" height="321">
+<img src="images/searchquery.png" width="349" height="256">
+<img src="images/detailpage.png" width="335" height="350">
+
