@@ -16,7 +16,9 @@ Need to have Java SE Runtime Environment in order to run this program
 
 Please download and go to dist directory to run the application
 
-If you are in dist directory, please run "WeatherApp_Final.jar"
+If you are in dist directory, <br>
+please run "WeatherApp_Final.jar" or
+type `java -jar WeatherApp_Final.jar` in your terminal/cmd
 
 You can read my java code in src directory.
 
